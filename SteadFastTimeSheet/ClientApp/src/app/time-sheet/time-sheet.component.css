@@ -1,0 +1,50 @@
+.container {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.data-table td,.data-table th {
+    padding: 8px;
+  }
+  
+.data-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+  
+.data-table tr:hover {
+    background-color: #ddd;
+}
+  
+.data-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4BBCFE;
+    color: white;
+}
+
+.data-table td {
+    text-align: left;
+}
+
+.card-body {
+    min-height: 200px;
+    line-height: 200px;
+}
+
+.card-body p {
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.btn-primary {
+    width: 250px;
+}

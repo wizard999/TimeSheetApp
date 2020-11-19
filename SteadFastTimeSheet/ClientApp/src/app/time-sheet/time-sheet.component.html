@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="table" *ngIf="timeSheetList.length">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Employee Name</th>
+                    <th>Date</th>
+                    <th>Hours Worked</th>
+                </tr>
+            </thead>
+            <tbody>
+                <ng-container *ngFor="let item of timeSheetList">
+                      <tr>
+                          <td>{{ item.employee.firstName }} {{ item.employee.lastName }}</td>
+                          <td>{{ item.timeSheet.date | date }}</td>
+                          <td>{{ item.timeSheet.workHours }}</td>
+                      </tr>
+                </ng-container>
+            </tbody>
+        </table>
+    </div>
+    <div class="card" *ngIf="!timeSheetList.length">
+        <div class="card-body">
+            <p>No data available.</p>
+        </div>
+    </div>
+    <br/>
+    <p>
+        <button type="button" class="btn btn-primary" (click)="showAddTimeSheetModel()">Add TimeSheet</button>
+    </p>
+</div>
